@@ -593,7 +593,7 @@ h3 {
   transition: var(--transition);
 }
 
-.modal-close-btn-icon {
+.subscribe-icon {
   margin-left: 16px;
   fill: var(--white);
 }
