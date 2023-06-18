@@ -924,7 +924,6 @@ subscribe-btn:focus {
 }
 
 .modal-form-check-desc {
-  display: inline-flex;
   align-items: center;
   font-weight: 400;
   font-size: 12px;
@@ -944,6 +943,7 @@ subscribe-btn:focus {
 }
 
 .checkbox-styled {
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   margin-right: 8px;
