@@ -949,7 +949,7 @@ subscribe-btn:focus {
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-form-check:checked .checkbox-styled {
+.modal-form-check:checked + .checkbox-styled {
   background-color: var(--ocean);
   border: none;
   fill: var(--cloud);
@@ -957,6 +957,10 @@ subscribe-btn:focus {
 
 .modal-form-check:focus + .checkbox-styled {
   border-color: var(--iris);
+}
+
+.policy-link {
+  color: var(--iris);
 }
 
 .modal-form-submit {
@@ -978,7 +982,7 @@ subscribe-btn:focus {
   border-radius: 4px;
   border: none;
   cursor: pointer;
-  transition: var(--transition);
+  transition: background-color var(--transition);
 }
 
 .modal-form-submit:hover,
