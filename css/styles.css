@@ -933,6 +933,16 @@ subscribe-btn:focus {
   color: var(--liteslate);
 }
 
+.modal-form-check:checked + .modal-form-check-desc span {
+  background-color: var(--ocean);
+  border: none;
+  fill: var(--cloud);
+}
+
+.modal-form-check:focus + .modal-form-check-desc span {
+  border-color: var(--iris);
+}
+
 .checkbox-styled {
   display: inline-flex;
   align-items: center;
@@ -947,16 +957,6 @@ subscribe-btn:focus {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-form-check:checked + .checkbox-styled {
-  background-color: var(--ocean);
-  border: none;
-  fill: var(--cloud);
-}
-
-.modal-form-check:focus + .checkbox-styled {
-  border-color: var(--iris);
 }
 
 .policy-link {
