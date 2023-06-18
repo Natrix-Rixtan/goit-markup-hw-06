@@ -511,7 +511,7 @@ h3 {
 }
 .footer-tytle {
   margin-bottom: 16px;
-  font-family: 'Roboto', sans-serif;
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -542,13 +542,11 @@ h3 {
   height: 24px;
 }
 
-.subscribe {
-  width: 453px;
-}
-
 .subscribe-form {
   display: flex;
   justify-content: start;
+  width: 453px;
+  gap: 24px;
 }
 
 .subscribe-input {
@@ -560,6 +558,10 @@ h3 {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   padding-left: 16px;
   padding-right: 8px;
+
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
   color: var(--white);
   transition: border-color var(--transition);
 }
@@ -567,7 +569,7 @@ h3 {
 .subscribe-input::placeholder {
   font-family: inherit;
   font-weight: 400;
-  font-size: 12px;
+  /* font-size: 12px; */
   line-height: 2;
   letter-spacing: 0.04em;
   color: var(--white);
@@ -575,10 +577,11 @@ h3 {
 
 .subscribe-btn {
   display: flex;
+  justify-content: center;
+  align-items: center;
   min-width: 165px;
   height: 40px;
   padding: 8px 24px;
-  margin-left: 24px;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -815,25 +818,39 @@ subscribe-btn:focus {
 /* ====== /MODAL WINDOW ====== */
 
 /* ====== MODAL FORM ====== */
+.modal-title {
+  margin-bottom: 16px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  color: var(--navyblue);
+}
 
 .modal-form {
   display: flex;
   flex-direction: column;
 }
 
-.modal-title {
-  display: inline-block;
-  margin-bottom: 16px;
-  /* align-items: center; */
-  margin-left: auto;
-  margin-right: auto;
-
-  font-weight: 500;
-  color: var(--navyblue);
+.modal-form-cont {
+  margin-bottom: 8px;
 }
 
 .modal-form-field {
-  /* margin-top: 8px; */
+  display: block;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: var(--liteslate);
+  margin-bottom: 4px;
+}
+
+.modal-form-input-wrapper {
+  display: block;
+  position: relative;
+  margin-bottom: 8px;
 }
 
 .modal-form-input {
@@ -843,10 +860,10 @@ subscribe-btn:focus {
   border-radius: 4px;
   padding-left: 38px;
   padding-right: 8px;
-  background-color: var(--dairy);
+  background-color: transparent;
   font-family: inherit;
   color: var(--navyblue);
-  outline: none;
+  outline: transparent;
   transition: border-color var(--transition);
 }
 
@@ -856,16 +873,6 @@ subscribe-btn:focus {
 
 .modal-form-input:focus + .modal-form-icon {
   fill: var(--iris);
-}
-
-.modal-form-input-desc {
-  display: block;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
-  color: var(--liteslate);
-  margin-bottom: 4px;
 }
 
 .modal-form-message {
@@ -893,12 +900,6 @@ subscribe-btn:focus {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--navybluemodal);
-}
-
-.modal-form-input-wrapper {
-  display: block;
-  position: relative;
-  margin-bottom: 8px;
 }
 
 .modal-form-icon {
