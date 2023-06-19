@@ -769,7 +769,7 @@ subscribe-btn:focus {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 408px;
-  min-height: 516px;
+  /* height: 584px; */
   padding-top: 72px;
   padding-bottom: 24px;
   padding-left: 24px;
@@ -854,7 +854,6 @@ subscribe-btn:focus {
 .modal-form-input-wrapper {
   display: block;
   position: relative;
-  margin-bottom: 8px;
 }
 
 .modal-form-input {
